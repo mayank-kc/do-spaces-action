@@ -27,7 +27,7 @@ class S3Interface {
 				Bucket: this.bucket,
 				Key: path,
 				ACL: this.permission,
-				ContentType: 'application/x-javascript',
+				ContentType: 'application/javascript',
 				ContentEncoding: 'gzip'
 			}
 

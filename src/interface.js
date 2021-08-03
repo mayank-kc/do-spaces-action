@@ -27,8 +27,8 @@ class S3Interface {
 				Bucket: this.bucket,
 				Key: path,
 				ACL: this.permission,
-				ContentType: lookup(file) || 'text/plain',
-				ContentEncoding: "gzip"
+				ContentType: 'application/x-javascript',
+				ContentEncoding: 'gzip'
 			}
 
 			this.s3.upload(options, (err, data) => {
